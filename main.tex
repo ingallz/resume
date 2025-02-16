@@ -1,9 +1,3 @@
-%-------------------------
-% Resume in Latex
-% Author : Aras Gungore
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -20,27 +14,14 @@
 \usepackage{hyphenat}
 \usepackage{fontawesome}
 \input{glyphtounicode}
-
-
-%---------- FONT OPTIONS ----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
+\usepackage{xcolor}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -53,23 +34,17 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
-
-%-------------------------
-% Custom commands
 
 \newcommand{\resumeItem}[1]{
   \item\small{
   {#1 \vspace{-2pt}}
   }
 }
-
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
@@ -79,14 +54,12 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-
 \newcommand{\resumeSubSubheading}[2]{
     \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
-
 
 \newcommand{\resumeEducationHeading}[6]{
   \vspace{-2pt}\item
@@ -97,14 +70,12 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-
 \newcommand{\resumeProjectHeading}[2]{
     \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
-
 
 \newcommand{\resumeOrganizationHeading}[4]{
   \vspace{-2pt}\item
@@ -123,297 +94,291 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
-%---------- HEADING ----------
-
 \begin{center}
-  \textbf{\Huge \scshape Tran Duc Huy} \\ \vspace{3pt}
+  \textbf{\Huge \scshape Tran Duc Huy} \\ \vspace{4pt}
   \small
   \faMobile \hspace{.5pt} \href{tel:84399831338}{+84 399 831 338}
   $|$
   \faAt \hspace{.5pt} \href{mailto:huy52670@gmail.com}{huy52670@gmail.com}
   $|$
-  \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/huy31-1b80a1297/}{LinkedIn}
-  $|$
-  \faGithub \hspace{.5pt} \href{https://github.com/duchuys31}{GitHub}
+  \faGithub \hspace{.5pt} \href{https://github.com/ingallz}{GitHub}
   $|$
   \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Hanoi,+Vietnam/@21.02288,105.7545628,12z/data=!3m1!4b1!4m6!3m5!1s0x3135ab9bd9861ca1:0xe7887f7b72ca17a9!8m2!3d21.0277644!4d105.8341598!16zL20vMGZuZmY?entry=ttu}{Hanoi, Vietnam}
 \end{center}
 
 
-
-%----------- EDUCATION -----------
+\section{Career Objective}
+\vspace{4pt}
+\resumeSubHeadingListStart
+\small{\item{
+  \textbf{\faRocket \hspace{4pt} Short-Term Goals:}{
+    I aim to specialize in high-scale systems through system optimization and database scaling. My focus is on performance tuning and distributed architectures to handle large data volumes and high-concurrency requests.
+  } \\ \vspace{4pt}
+  \textbf{\faBullseye \hspace{4pt} Long-Term Goals:}{
+    I aim to advance to a Technical Lead or Solutions Architect role in 6-8 years, focusing on designing large-scale systems serving millions of users. I will master system architecture, scalability solutions, and lead teams in delivering robust technology platforms.
+  } \\ \vspace{4pt}
+}}
+\resumeSubHeadingListEnd
+\vspace{4pt}
 
 \section{Education}
-\vspace{3pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
 
 \resumeEducationHeading
-{Posts and Telecommunications Institute of Technology - PTIT}{Hanoi, Vietnam}
-{Information Technology   \textbf{}}{Aug 2020 \textbf{--} Present}
+{\textbf{\faGraduationCap \hspace{4pt} Posts and Telecommunications Institute of Technology - PTIT}}{Hanoi, Vietnam}
+{Information Technology   \textbf{}}{Aug 2020 \textbf{--} Dec 2024}
 {}{}
-% \resumeItemListStart
-% \resumeItem{\textbf{Relevant coursework:} Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision}
-% \resumeItemListEnd
-
-% \resumeSubheading
-% {Kocaeli Science High School
-% \normalfont{(Admission rate: 0.85\%)}
-% }{Kocaeli, Turkey}
-% {High School Diploma;   \textbf{GPA: 97.03/100}}{Sep 2014 \textbf{--} Jun 2018}
-
 \resumeSubHeadingListEnd
-
-
-%----------- SKILLS -----------
 
 \section{Skills}
-\vspace{3pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
 \small{\item{
-
-              \textbf{Languages:}{ C, C++, Java, Python, JavaScript, TypeScript} \\ \vspace{3pt}
-
-              \textbf{Databases:}{ SQLite, Microsoft SQL Server, MySQL, PostgreSQL, GraphQL} \\ \vspace{3pt}
-
-              \textbf{Technologies:}{ Django, FastAPI, Spring, Servlet, Node.js, React.js, Fastify, Express.js, Refine, Docker, Caprover, Hasura, Keycloak, Airflow,
-                Redis, BeautifulSoup, Selenium } \\ \vspace{3pt}
-
-              \textbf{Hosting/SaaS:}{ AWS, Netlify, Render, Railway } \\ \vspace{3pt}
-
-              \textbf{OS:}{ Window, Ubuntu(Primary OS), Centos} \\ \vspace{3pt}
-
-              \textbf{Others:}{ Git, CI/CD} \\ \vspace{3pt}
-
-        }}
+  \textbf{\faCode \hspace{4pt} Programming Languages:}{ Python, JavaScript/TypeScript, C/C++} \\ \vspace{4pt}
+  \textbf{\faDatabase \hspace{4pt} Databases:}{ PostgreSQL, MySQL, MongoDB, Redis } \\ \vspace{4pt}
+  \textbf{\faServer \hspace{4pt} Backend:}{
+    Django, FastAPI, NestJS, ExpressJS, RabbitMQ, Elasticsearch, GraphQL, Supabase
+  } \\ \vspace{4pt}
+  \textbf{\faDesktop \hspace{4pt} Frontend:}{
+    ReactJS, NextJS, Antd, Shadcn, TailwindCSS, Zustand
+  } \\ \vspace{4pt}
+  \textbf{\faGears \hspace{4pt} Others:}{ Git, Docker, CI/CD, Linux, Cloudflare} \\ \vspace{4pt}
+}}
 \resumeSubHeadingListEnd
-\vspace{3pt}
-
-\vspace{5pt}
-%----------- WORK EXPERIENCE -----------
-
 \section{Work Experience}
-\vspace{3pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
-
 \resumeSubheading
-{Cohost AI}{Hanoi, Vietnam}
-{Software Engineer}{Jun 2023 \textbf{--} Nov 2023}
+{\textbf{\faBuildingO \hspace{4pt} Pervasel}}{\textbf{Hanoi, Vietnam}}
+{Software Developer}{May 2024 \textbf{--} Present}
+\vspace{8pt}
 \resumeItemListStart
-\vspace{3pt}
-\resumeItem{Attending weekly company training covering Frontend, Backend, Data, and DevOps.}
-\vspace{3pt}
-\resumeItem{Re-running the microservices system using Eureka and deploying it on the server (Centos) using Nginx.}
-\vspace{3pt}
-\resumeItem{Participating in the development and design of a PostgreSQL database for a project that follows the architecture of an organizational and customer care management system, initially intended for 1000 users.}
-\vspace{3pt}
-\resumeItem{Utilizing Airflow to create a pipeline for executing the data crawling process on specified websites and subsequently storing the gathered data in a database at regular intervals.}
-\vspace{3pt}
-\resumeItem{Utilizing Django and Fastify to deploy and construct API layers, utilizing Webhooks to develop services within the system, and leveraging Django Channels for building real-time messaging applications.}
-\vspace{3pt}
-\resumeItem{Utilizing Keycloak to optimize authentication (JWT, OAuth) and authorization for the system.}
-\vspace{3pt}
-\resumeItem{Utilizing Hasura to optimize CRUD service efficiency and boost query performance on the frontend.}
-\vspace{3pt}
-\resumeItem{Collaborating with the frontend team, the team identified and rectified logical errors within the codebase, addressed environmental issues, and resolved basic UI/UX concerns.}
-\vspace{3pt}
-\resumeItem{Utilizing OpenAI’s Embedding model to develop a customer advisory chatbot using pre-prepared data.}
-\vspace{3pt}
-\resumeItem{Creating and modifying Docker configurations to run all services concurrently, establishing a CI/CD pipeline, utilizing CapRover for deploying the system on servers, and configuring HTTPS.}
-\vspace{3pt}
 
+\textbf{\large{\faCube \hspace{4pt} Printsel}} \textit{(Cross-border Order Management System)}
+\vspace{6pt}
+
+\resumeItem{\textbf{Technologies:} NestJS, Elasticsearch, Redis, MongoDB, BullMQ, RabbitMQ, ReactJS, Antd, Shadcn, TailwindCSS}
+\vspace{4pt}
+
+\resumeItem{\textbf{Team Size:} 4 members}
+\vspace{4pt}
+
+\resumeItem{\textbf{Key Achievements:}}
+\begin{itemize}
+\item Implemented Facade pattern to build unified API layer integrating multiple providers, enabling seamless cross-platform order management
+\item Optimized database performance through sharding, replication, and strategic indexing, achieving sub-second query response times
+\item Developed comprehensive activity logging system with API integration for detailed user action tracking and audit trails
+\item Leveraged RabbitMQ for asynchronous processing and load distribution, handling 10,000+ daily transactions with high stability
+\item Implemented Cache-Aside pattern with Redis and automated cache invalidation triggers
+\item Conducted extensive performance optimization: query tuning, memory leak fixes, over-fetching,...
+\item Built robust session management system tracking user login details: IP, geolocation, device,...
+\item Implemented comprehensive build system for both frontend and backend modules (session, user, order, activities...)
+\item Built audit logging system to track complete history of user actions on orders and products including creation, updates and status changes
+\end{itemize}
+\vspace{12pt}
+
+\begin{center}
+\textcolor{lightgray}{\rule[0pt]{0.5\textwidth}{0.03pt}}
+\end{center}
+\vspace{12pt}
+
+\textbf{\large{\faCube \hspace{4pt} FERP}} \textit{(Internal Management System)}
+\resumeItem{\textbf{Technologies:} NestJS, Elasticsearch, Redis, MongoDB, BullMQ, ReactJS, TailwindCSS}
+\vspace{4pt}
+\resumeItem{\textbf{Team Size:} 6 members}
+\vspace{4pt}
+\resumeItem{\textbf{Key Achievements:}}
+\begin{itemize}
+\item Implemented Redis-based rate limiting for e-commerce platform APIs to prevent server bottlenecks and ensure stable performance
+\item Leveraged BullMQ for distributed cron job scheduling across multiple nodes to maintain system reliability
+\item Built bulk operations APIs for e-commerce platforms to optimize user workflows: product uploads, promotions, fulfillment, ...
+\item Developed multi-threaded system with 30+ workers for order/product syncing and webhook queue processing
+\item Optimized database performance through sharding, replication and strategic indexing for 10M+ record tables
+\item Implemented Cache-Aside pattern with Redis and automated cache invalidation triggers
+\item Developed comprehensive HRM module with key features: attendance tracking, petition management,...
+\item Integrated OCR capabilities to scan and extract data from PDF documents like: shipping labels, invoices, ...
+\item Integrated Printsel APIs to streamline order processing workflows, reducing order handling time
+\end{itemize}
+
+\resumeItemListEnd
 \vspace{20pt}
 
+\resumeSubheading
+{\textbf{\faBuildingO \hspace{4pt} FPT Smart Cloud}}{\textbf{Hanoi, Vietnam}}
+{Software Developer}{Oct 2023 \textbf{--} May 2024}
+\vspace{8pt}
+\resumeItemListStart
+
+\textbf{\large{\faCube \hspace{4pt} Mentor AI}} \textit{(AI-Powered Customer Support System)}
+\vspace{6pt}
+
+\resumeItem{\textbf{Technologies:} Django, NestJS, Elasticsearch, Redis, MySQL, BullMQ}
+\vspace{4pt}
+\resumeItem{\textbf{Team Size:} 10+ members}
+\vspace{4pt}
+
+\resumeItem{\textbf{Key Achievements:}}
+\begin{itemize}
+\item Built an adaptive learning system that automatically adjusts content based on user performance across different aspects, personalizing the learning experience
+\item Developed a scalable quiz system capable of handling concurrent users with efficient queue management for questions and answers
+\item Implemented feature enabling real-time tracking of learning progress, proficiency levels, and knowledge status
+\item Contributed to integrating Mentor AI engine with FPT AI platform for deployment across multiple platforms (Facebook, Zalo, MS Teams)
+\item Implemented comprehensive logging system with custom interceptors and Sentry integration for error tracking and monitoring
+\end{itemize}
+\vspace{12pt}
+
+
+\begin{center}
+\textcolor{lightgray}{\rule[0pt]{0.5\textwidth}{0.03pt}}
+\end{center}
+\vspace{12pt}
+
+\textbf{\large{\faCube \hspace{4pt} Mentor AI}} \textit{(Report System)}
+\resumeItem{\textbf{Technologies:} NestJS, Elasticsearch, Redis, MySQL, BullMQ}
+\vspace{4pt}
+\resumeItem{\textbf{Team Size:} 4 members}
+\vspace{4pt}
+
+\resumeItem{\textbf{Key Achievements:}}
+\begin{itemize}
+\item Developed analytics reports for business requirements (e.g., Performance Metrics, Fraud Detection, Growth Analytics, ...) to support data-driven decision making
+\item Built automated cronjobs using BullMQ to schedule and execute report generation scripts
+\item Integrated Elasticsearch and Redis to improve report processing speed and overall system performance
+\end{itemize}
+
+\resumeItemListEnd
+\vspace{80pt}
+
+\resumeSubheading
+{\textbf{\faBuildingO \hspace{4pt} Cohost AI}}{\textbf{Hanoi, Vietnam}}
+{Software Developer (Hybrid)}{Jun 2023 \textbf{--} May 2024}
+\resumeItemListStart
+\vspace{4pt}
+\resumeItem{Developed and designed PostgreSQL database for an organizational and customer care management system serving 1000+ users}
+\vspace{4pt}
+\resumeItem{Built data pipeline using Airflow to automate web crawling processes and store data in PostgreSQL and Elasticsearch}
+\vspace{4pt}
+\resumeItem{Developed real-time chat rooms enabling seamless communication between employees and customers with WebSocket services for instant message delivery}
+\vspace{4pt}
+\resumeItem{Implemented authentication and authorization system using Keycloak with JWT and OAuth integration}
+\vspace{4pt}
+\resumeItem{Migrated legacy APIs to GraphQL with Hasura, optimizing data retrieval through precise field selection and reduced payload size}
+\vspace{4pt}
+\resumeItem{Developed an intelligent customer service chatbot leveraging RAG with OpenAI API for enhanced query understanding and contextual responses}
+\vspace{4pt}
+\resumeItem{Set up CI/CD pipeline and container orchestration with Docker, deployed to production using CapRover platform}
+\vspace{4pt}
+
 \resumeItemListEnd
 \resumeSubheading
-{Code Mely}{Hanoi, Vietnam}
+{\textbf{\faUsers \hspace{4pt} Code Mely}}{\textbf{Hanoi, Vietnam}}
 {Collaborator}{Jun 2022 \textbf{--} Jun 2023}
 \resumeItemListStart
-\vspace{3pt}
-\resumeItem{Re-running the source code of DMOJ (an automated code grading system) locally and deploying it on EC2.}
-\vspace{3pt}
+\vspace{4pt}
+\resumeItem{Deployed and configured DMOJ (an automated code grading system) by setting up the development environment locally and orchestrating its deployment on AWS EC2 for production use.}
+\vspace{4pt}
 \resumeItem{Tester at Codeforces Round \#842}
-\vspace{3pt}
+\vspace{4pt}
 
 \resumeItemListEnd
+\vspace{20pt}
 
+\resumeSubheading
+{\textbf{\faGlobe \hspace{4pt} Samsung Lab}}{\textbf{Hanoi, Vietnam}}
+{Researcher}{Aug 2021 \textbf{--} Jun 2023}
+\resumeItemListStart
+\vspace{4pt}
+\resumeItem{As a member of the lab, I utilize lab equipment for research purposes and participate in training sessions conducted by mentors and teachers on applications and algorithms.}
+\vspace{4pt}
 
-% \resumeSubheading
-% {Ankara Metropolitan Municipality}{Ankara, Turkey}
-% {SCADA Engineering Intern}{Aug 2021 \textbf{--} Sep 2021, Internship}
-% \resumeItemListStart
-% \resumeItem{Designed GSM/GPRS-based electrical control panels that are connected to local water pump automation systems. Pump station panels use digital output data received from the SCADA control center via RF transmission to control valves and pumps. Tank station panels are charged from the PV system and refill water tanks by signaling the pump station panel when the float switch is activated.}
-% \resumeItem{Implemented motor control circuits by reading their PLC ladder diagrams and analyzed the EPLAN project documentation, HMI, and hardware components of an RTU panel.}
-% \resumeItemListEnd
-
-% \vspace{15pt}
-% \resumeSubheading
-% {Meteksan Defense Industry Inc.}{Ankara, Turkey}
-% {Analog Design Engineering Intern}{Jul 2021 \textbf{--} Aug 2021, Internship}
-% \resumeItemListStart
-% \resumeItem{Designed and simulated numerous analog circuits such as voltage-mode controlled buck converter, phase-shifted full-bridge isolated DC-DC converter, and EMI filters with LTspice. Integrated these circuits and implemented a 320 W power distribution unit to be used in a radar system's power circuit board.}
-% \resumeItem{Researched real-world compatible electronic components to be used in such circuits including GaNFETs, high-side gate drivers, and Schottky diodes.}
-% \resumeItem{Assembled PCBs of both common and differential mode filters and used VNA Bode 100 to measure the cut-off frequencies.}
-% \resumeItemListEnd
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-
-\section{Projects}
-\vspace{3pt}
-\resumeSubHeadingListStart
-
-\resumeProjectHeading
-{\textbf{Chronicle} $|$ \emph{\href{https://github.com/duchuys31/Chronicle}{\color{red}GitHub}}}{}
-\resumeItemListStart
-\vspace{3pt}
-\resumeItem{Designing a system for managing book sales and user administration.}
-\vspace{3pt}
-\resumeItem{Implementing the backend layer using Spring and MySQL, which encompasses CRUD APIs, Authentication (JWT, OAuth), and Authorization to facilitate interactions with the frontend.}
-\vspace{3pt}
-\resumeItem{Utilizing ReactJS for processing data during API calls from the backend and designing the User Interface/User Experience (UI/UX) for the website.}
-\vspace{3pt}
-\resumeItem{Using the OpenAI API to develop a translation service aimed at enhancing the user experience.}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Chat Website} $|$ \emph{\href{https://github.com/duchuys31/ChatWeb}{\color{red}GitHub}}}{}
-\resumeItemListStart
-\resumeItem{Developing a real-time user chat system.}
-\vspace{3pt}
-\resumeItem{Implementing the construction of APIs, authentication, authorization, and sockets for the application using Django and SQLite.}
-\vspace{3pt}
-\resumeItem{Implementing the frontend interface layer of the application with React.js, handling data received from the backend, and establishing a connection to the socket.}
-\vspace{3pt}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-
-
-
-% %----------- RESEARCH EXPERIENCE -----------
-
-% \section{Research Experience}
-%   \vspace{3pt}
-%   \resumeSubHeadingListStart
-
-%     \resumeSubheading
-%       {Max Planck Institute for Intelligent Systems}{Stuttgart, Baden\textbf{-}Württemberg, Germany}
-%       {Undergraduate Researcher}{Jun 2022 \textbf{--} Aug 2022, Internship}
-%         \resumeItemListStart
-%             \resumeItem{Worked in the Robotics, Collectives and Learning subgroup at the Physical Intelligence Department with former Ph.D. students \href{https://www.linkedin.com/in/sinan-ozgun-demir-981311129/}{\color{blue}Sinan Özgün Demir} and \href{https://www.linkedin.com/in/alpkaracakol/}{\color{blue}Alp Can Karacakol} on a project about 3D printing and heat-assisted magnetic programming of soft machines under the supervision of \href{https://www.linkedin.com/in/metin-sitti-0a8a712/}{\color{blue}Prof. Dr. Metin Sitti}.}
-%             \resumeItem{Updated a ROS package for converting 3D motion controller events to ROS messages so that it synchronously operates at any given loop rate with C++.}
-%             \resumeItem{Implemented an Arduino Mega driver for controlling a fluid dispenser, a laser, thermocouples, and a coil set. Updated ROS nodes for parsing G-codes and controlling stage movement and built the ROS-Arduino communication network to simulate a 3D printing and magnetic programming process with Python.}
-%             \resumeItem{Designed the project's system and software architecture, algorithm flowchart, and state machine diagram. Implemented and debugged ROS nodes by validating each corresponding hardware component functions correctly.}
-%         \resumeItemListEnd
-
-%     \vspace{14pt}
-
-%     \resumeSubheading
-%       {Nanonetworking Research Group, Boğaziçi University}{Istanbul, Turkey}
-%       {Undergraduate Researcher}{Oct 2021 \textbf{--} Jun 2022, Part-time}
-%         \resumeItemListStart
-%             \resumeItem{Worked on the project “Design and Implementation of Molecular Communication Systems Using Index Modulation” under the supervision of \href{https://www.linkedin.com/in/alipusane/}{\color{blue}Prof. Dr. Ali Emre Pusane}.}
-%             \resumeItem{Simulated the Brownian motion of molecules in a SISO MCvD system and predicted simulation parameters such as receiver radius, diffusion coefficient, and transmitter-receiver distance using CNNs with Keras and TensorFlow.}
-%             \resumeItem{Plotted the arrival of molecules per symbol duration in a SISO MCvD system using Binomial, Poisson, and Gaussian model approximations with MATLAB.}
-%             \resumeItem{Ran Monte Carlo simulations of the Gaussian model to encode/decode randomized binary sequences in a SISO MCvD system using BCSK modulation technique and calculated the bit error rate on Z-channel.}
-%         \resumeItemListEnd
-
-%   \resumeSubHeadingListEnd
-
-
-
-%----------- AWARDS & ACHIEVEMENTS -----------
-
-
-
-
-
-
-%----------- RELEVANT COURSEWORK -----------
-
-% \section{Relevant Coursework}
-% \vspace{2pt}
+% \section{Projects}
+% \vspace{4pt}
 % \resumeSubHeadingListStart
-% \small{\item{
-% \textbf{Major coursework:}{ Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision} \\ \vspace{3pt}
 
-% \textbf{Minor coursework:}{ Discrete Computational Structures, Introduction to Object-Oriented Programming, Data Structures and Algorithms, Computer Organization, Fundamentals of Software Engineering}
-% }}
+% \resumeProjectHeading
+% {\textbf{Chronicle} $|$ \emph{\href{https://github.com/duchuys31/Chronicle}{\color{red}GitHub}}}{}
+% \resumeItemListStart
+% \vspace{4pt}
+% \resumeItem{Designing a system for managing book sales and user administration.}
+% \vspace{4pt}
+% \resumeItem{Implementing the backend layer using Spring and MySQL, which encompasses CRUD APIs, Authentication (JWT, OAuth), and Authorization to facilitate interactions with the frontend.}
+% \vspace{4pt}
+% \resumeItem{Using ReactJS for processing data during API calls from the backend and designing the User Interface/User Experience (UI/UX) for the website.}
+% \vspace{4pt}
+% \resumeItem{Using the OpenAI's API to develop a translation service for 32 distinct language aimed at enhancing the user experience.}
+% \resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{Chat Website} $|$ \emph{\href{https://github.com/duchuys31/ChatWeb}{\color{red}GitHub}}}{}
+% \resumeItemListStart
+% \resumeItem{Developing a real-time user chat system.}
+% \vspace{4pt}
+% \resumeItem{Implementing the construction of APIs, authentication, authorization, and sockets for the application using Django and SQLite.}
+% \vspace{4pt}
+% \resumeItem{Implementing the frontend interface layer of the application with React.js, handling data received from the backend, and establishing a connection to the socket.}
+% \vspace{4pt}
+% \resumeItemListEnd
 % \resumeSubHeadingListEnd
 
-
-
-%----------- CERTIFICATES -----------
-
-
-\section{Awards \& Achievements}
+\section{Achievements, Awards \& Certifications}
 \vspace{2pt}
 \resumeSubHeadingListStart
 \small{\item{
-              \textbf{ICPC ASIA Vietnam Regional 2021:}{ Ranked $39^{th}$ - Third Prize (Mar 2022) $|$ \emph{\href{https://icpc.global/ICPCID/DO3D9RLNRDX8}{\color{red}Link}}} \\ \vspace{3pt}
+\resumeOrganizationHeading
+{\faTrophy \hspace{4pt} ICPC ASIA Vietnam Regional 2021 $|$ \emph{\href{https://icpc.global/ICPCID/DO3D9RLNRDX8}{\color{red}Link}}}
+{Mar 2022}{Ranked(U) $13^{th}$ - Third Prize.}
 
-              \textbf{ICPC ASIA Vietnam Regional 2022:}{ Ranked $40^{th}$. (Dec 2022) $|$ \emph{\href{https://icpc.global/ICPCID/DO3D9RLNRDX8}{\color{red}Link}}} \\ \vspace{3pt}
-
-              \textbf{Vietnamese Olympiad in Informatics for Universities (VOI):}{ Third Prize (Dec 2022) $|$ \emph{\href{https://drive.google.com/file/d/17VevlBhBMuU_wrVzSMOtZyQzstWhlA-Q/view?usp=sharing}{\color{red}Link}}} \\ \vspace{3pt}
-
-              \textbf{ICPC PTIT 2022:}{ Ranked $1^{th}$ - Champion (Oct 2022) $|$ \emph{\href{https://portal.ptit.edu.vn/le-trao-giai-cuoc-thi-lap-trinh-theo-chuan-quoc-te-icpc-icpc-ptit-2022/}{\color{red}Link}}} \\ \vspace{3pt}
-
-              \textbf{CODEKING PTIT 2022:}{ Ranked $3^{th}$. (Sep 2022) $|$ \emph{\href{https://www.facebook.com/ITPTIT/photos/a.679487585460391/5532805340128567/}{\color{red}Link}}} \\ \vspace{3pt}
-
-
-        }}
-\resumeSubHeadingListEnd
-
-\section{Certificates}
-\resumeSubHeadingListStart
+\vspace{5pt}
 
 \resumeOrganizationHeading
-{Samsung's Certificates for DSA and Applications $|$ \emph{\href{https://drive.google.com/file/d/1kNnWVGgaUS-IkM80B9xVpEJmoQGsRhfZ/view?usp=sharing}{\color{red}Link}}}{Oct 2021}{The program equips students with a strong algorithmic foundation for practical problem-solving.}
+{\faTrophy \hspace{4pt} ICPC ASIA Vietnam Regional 2022 $|$ \emph{\href{https://icpc.global/ICPCID/DO3D9RLNRDX8}{\color{red}Link}}}
+{Dec 2022}{Ranked(U) $13^{th}$ - Third Prize.}
 
-\resumeSubHeadingListEnd
-\vspace{3pt}
-
-
-% ----------- ORGANIZATIONS -----------
-
-\section{Organizations}
-\resumeSubHeadingListStart
+\vspace{5pt}
 
 \resumeOrganizationHeading
-{PTIT's 2021 IT Olympiad Team}{Aug 2021 -- Dec 2022}{Student Member}
+{\faTrophy \hspace{4pt} Vietnamese Olympiad in Informatics for Universities (VOI) $|$ \emph{\href{https://drive.google.com/file/d/17VevlBhBMuU_wrVzSMOtZyQzstWhlA-Q/view?usp=sharing}{\color{red}Link}}}
+{Dec 2022}{Third Prize.}
+
+\vspace{5pt}
 
 \resumeOrganizationHeading
-{Code Mely}{Jun 2022 -- Jun 2023}{Algo Team}
+{\faTrophy \hspace{4pt} ICPC PTIT 2022 $|$ \emph{\href{https://portal.ptit.edu.vn/le-trao-giai-cuoc-thi-lap-trinh-theo-chuan-quoc-te-icpc-icpc-ptit-2022/}{\color{red}Link}}}
+{Oct 2022}{Ranked $1^{th}$ - Champion.}
 
+\vspace{5pt}
+
+\resumeOrganizationHeading
+{\faTrophy \hspace{4pt} CODEKING PTIT 2022 $|$ \emph{\href{https://www.facebook.com/ITPTIT/photos/a.679487585460391/5532805340128567/}{\color{red}Link}}}
+{Sep 2022}{Ranked $3^{th}$.}
+
+\vspace{5pt}
+
+\resumeOrganizationHeading
+{\faCertificate \hspace{4pt} Samsung's Certificates for DSA and Applications $|$ \emph{\href{https://drive.google.com/file/d/1kNnWVGgaUS-IkM80B9xVpEJmoQGsRhfZ/view?usp=sharing}{\color{red}Link}}}{Oct 2021}
+{The program equips students with a strong algorithmic foundation for practical problem-solving.}
+
+\vspace{5pt}
+\resumeOrganizationHeading
+{\faStar \hspace{4pt} Codeforces $|$ \emph{\href{{https://codeforces.com/profile/Ignr_h31}}{\color{red}Link}}}{Apr 2022}
+{Expert}
+
+\vspace{5pt}
+\resumeOrganizationHeading
+{\faStar \hspace{4pt} VNOI $|$ \emph{\href{{https://oj.vnoi.info/user/huys31}}{\color{red}Link}}}{Jun 2022}
+{Expert}
+
+
+}}
+\vspace{5pt}
 \resumeSubHeadingListEnd
+\vspace{4pt}
 
-
-
-%----------- HOBBIES -----------
-
-% \section{Hobbies}
-% \resumeSubHeadingListStart
-% \small{\item{Swimming, Fitness, Eight-ball}}
-% \resumeSubHeadingListEnd
-
-
-%----------- REFERENCES -----------
-
-\section{Others}
-\vspace{2pt}
-\resumeSubHeadingListStart
-\small{\item{
-              \textbf{Codeforces: }{ \emph{\href{https://codeforces.com/profile/Ignr_h31}{\color{blue}Expert}}} \\ \vspace{3pt}
-              \textbf{VNOI: }{ \emph{\href{https://oj.vnoi.info/user/huys31}{\color{blue}Expert}}} \\ \vspace{3pt}
-        }}
-\resumeSubHeadingListEnd
-
-
-
-%-------------------------------------------
 \end{document}
